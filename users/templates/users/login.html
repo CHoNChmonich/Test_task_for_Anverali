@@ -1,0 +1,8 @@
+<!-- login.html -->
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.username }} <!-- Поле ввода имени пользователя -->
+    {{ form.password }} <!-- Поле ввода пароля -->
+    <button type="submit">Login</button>
+</form>
